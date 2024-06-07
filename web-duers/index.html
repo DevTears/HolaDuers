@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <link rel="icon" href="/src/Duers-Isotipo_D-principal.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Hola Duers</title>
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader">
+            <img src="/src/pastilla.png" alt="Pastilla" class="pastilla">
+        </div>
+    </div>
+    
+    <a href="https://wa.me/5492615517488" class="whatsapp" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <b id="inicio"></b>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img id="Duers-logo" src="/src/logo-duers.png" alt="Duers Logo" draggable="false" height="80">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="color: white;">
+                <i class="fas fa-bars text-white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-white" href="#inicio" data-i18n="inicio"><i class="fas fa-home pe-2"></i>INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-white" href="#quienes_somos" data-i18n="nosotros"><i class="fas fa-users pe-2"></i>NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-white" href="#servicios" data-i18n="servicios"> <i class="fas fa-star pe-2"></i>SERVICIOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 text-white" href="#portfolio" data-i18n="portfolio"><i class="fas fa-briefcase pe-2"></i>PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2  text-white" href="#contacto" data-i18n="contacto"><i class="fas fa-envelope pe-2"></i>CONTACTO</a>
+                    </li>
+                    <!-- Selector de idioma -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdownLanguage" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            🌐 ES
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownLanguage">
+                            <li><a class="dropdown-item" href="#" data-lang="es">🇪🇸 Español</a></li>
+                            <li><a class="dropdown-item" href="#" data-lang="en">🇺🇸 English</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-aos="zoom-in">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/src/slider/Slider3.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/src/slider/Slider1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="/src/slider/Slider2.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon flecha-carrusell" aria-hidden="true"></span>
+            <span class="visually-hidden ">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon flecha-carrusell" aria-hidden="true"></span>
+            <span class="visually-hidden ">Next</span>
+        </button>
+    </div>
+    
+    <b id="quienes_somos"></b>
+    <section class="quienes-somos" data-aos="flip-left" data-aos-duration="1000">
+        <div class="section-title">
+            <div class="circle-icon">
+                <i class="fas fa-users"></i>
+            </div>
+            <div class="section-title-text">
+                <h2 class="titulo" data-i18n="quienes">Quiénes somos?</h2>
+                <div class="subrayado"></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left-column">
+                <div class="content-left">
+                    <p class="texto-quienes-somos" data-i18n="texto_quienes_somos">
+                        Somos una agencia de marketing, especializada en branding.
+                        Hacemos que tu marca trascienda, generando experiencias que cautivan a tu audiencia y crean conexiones emocionales duraderas.
+                        Con un enfoque centrado en la creatividad y la estrategia, nuestro equipo experto trabaja incansablemente para destacar los valores y la personalidad de tu marca.
+                        Desde el diseño de logotipos hasta la creación de una identidad visual cohesiva, estamos aquí para impulsar el reconocimiento de tu marca y diferenciarte en un mercado competitivo.
+                    </p>
+                    <p class="footer-text" data-i18n="eso_somos"><b >¡Eso somos en Duers!</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <b id="servicios"></b>
+    <section class="servicios">
+        <div class="section-title">
+            <div class="circle-icon">
+                <i class="fas fa-cogs"></i>
+            </div>
+            <div class="section-title-text">
+                <h2 class="titulo" data-i18n="seccion_servicios">Servicios</h2>
+                <div class="subrayado"></div>
+            </div>
+        </div>
+        <div class="servicios-servicio">
+                <div class="servicios-row">
+                    <div class="col-12 col-sm-12 col-md-4 picto">
+                        <div class="servicio socialmediamanagement" data-aos="zoom-out-down" data-aos-duration="1000">
+                            <h3 data-i18n="smm">SOCIAL MEDIA MANAGEMENT</h3>
+                            <div class="pictograma">
+                                <img src="/src/servicios/SOCIAL MEDIA-03.png" alt="Pictograma">
+                            </div>
+                            <div class="servicio-descripcion ">
+                                
+                                <ul class="lista-servicio">
+                                    <li data-i18n="smm1">Generación de contenido para redes</li>
+                                    <li data-i18n="smm2">Calendarización de contenidos</li>
+                                    <li data-i18n="smm3">CRM</li>
+                                    <li data-i18n="smm4">Manejo de crisis / reclamos</li>
+                                    <li data-i18n="smm5">Métricas</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-4 picto">
+                        <div class="servicio" data-aos="zoom-in-down" data-aos-duration="1000">
+                            <h3 data-i18n="md">MARKETING DIGITAL</h3>
+                            <div class="pictograma">
+                                <img src="/src/servicios/MARKETING DIGITAL-06.png" alt="Pictograma">
+                            </div>
+                            <div class="servicio-descripcion">
+                                <ul class="lista-servicio">
+                                    <li data-i18n="md1">Google Ads</li>
+                                    <li data-i18n="md2">Facebook Ads</li>
+                                    <li data-i18n="md3">Seo / Sem</li>
+                                    <li data-i18n="md4">Email Marketing</li>
+                                    <br>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-4 picto">
+                        <div class="servicio" data-aos="zoom-in-up" data-aos-duration="1000">
+                            <h3 data-i18n="branding">BRANDING</h3>
+                            <div class="pictograma">
+                                <img src="/src/servicios/BRANDING-04.png" alt="Pictograma">
+                            </div>
+                            <div class="servicio-descripcion">
+                                
+                                <ul class="lista-servicio">
+                                    <li data-i18n="branding1">Identidad corporativa</li>
+                                    <li data-i18n="branding2">Diseño de Logotipos</li>
+                                    <li data-i18n="branding3">Naming</li>
+                                    <li data-i18n="branding4">Campañas de posicionamiento</li>
+                                    <li data-i18n="branding5">BrandBook</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                        <div class="col-sm-12 col-md-4 picto">
+                            <div class="servicio" data-aos="zoom-in-down" data-aos-duration="1000">
+                                <h3 data-i18n="diseño">DISEÑO</h3>
+                                <div class="pictograma">
+                                    <img src="/src/servicios/BRANDING-03.png" alt="Pictograma">
+                                </div>
+                                <div class="servicio-descripcion">
+                                    
+                                    <ul class="lista-servicio">
+                                        <li data-i18n="diseño1">Diseño de Producto</li>
+                                        <li data-i18n="diseño2">Diseño Web</li>
+                                        <li data-i18n="diseño3">Diseño de Packaging</li>
+                                        <li data-i18n="diseño4">Piezas de comunicación</li>
+                                        <br>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-md-4 picto">
+                            <div class="servicio socialmediamanagement" data-aos="zoom-out-up" data-aos-duration="1000">
+                                <h3 data-i18n="cje">CUSTOMER JOURNEY</h3>
+                                <div class="pictograma">
+                                    <img src="/src/servicios/SOCIAL MEDIA-04.png" alt="Pictograma">
+                                </div>
+                                <div class="servicio-descripcion">
+                                    
+                                    <ul class="lista-servicio">
+                                        <li data-i18n="cje1">Diseño de estrategia ad hoc a la marca</li>
+                                        <li data-i18n="cje2">Analisis de costos</li>
+                                        <li data-i18n="cje3">Puesta en marca</li>
+                                        <li data-i18n="cje4">Acciones de PR</li>
+                                        <li data-i18n="cje5">Mistery Shopper</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+        </div>
+    </section>
+    
+    <b id="portfolio"></b>
+    <div class="portfolio">
+        <div class="gallery">
+          <div class="item double-item">
+            <img src="customer_journey_image.jpg" alt="Customer Journey" class="media">
+            <img src="branded_content_image.jpg" alt="Branded Content" class="media">
+          </div>
+          <div class="item double-item">
+            <div class="overlay">
+              <h3>Fulanito</h3>
+            </div>
+            <img src="fulanito_image.jpg" alt="Fulanito" class="media">
+            <div class="overlay">
+              <h3>Creo</h3>
+            </div>
+            <img src="creo_image.jpg" alt="Creo" class="media">
+          </div>
+          <div class="item">
+            <img src="comp_mockup.jpg" alt="Comp Mockup">
+          </div>
+          <div class="item">
+            <img src="social_media_mockup.jpg" alt="Social Media Mockup">
+          </div>
+          <div class="item">
+            <img src="winum_image.jpg" alt="WINUM">
+          </div>
+          <div class="item">
+            <img src="flm_image.jpg" alt="FLM">
+          </div>
+        </div>
+      </div>
+      
+    <section class="portfolio" data-aos="fade-up" data-aos-duration="1000">
+        <div class="section-title">
+            <div class="circle-icon">
+                <i class="fas fa-folder-open"></i>
+            </div>
+            <div class="section-title-text">
+                <h2 class="titulo" data-i18n="portfolio0">Portfolio</h2>
+                <div class="subrayado"></div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="item small-vertical">
+                <img src="/src/portfolio/MockupFuncken.png" alt="Image 1">
+                <div class="overlay">
+                    <h3 data-i18n="portfolio1">Social Media Management</h3>
+                </div>
+            </div>
+            <div class="container-vertical">
+                <div class="item small-vertical winum">
+                    <img src="/src/portfolio/WinumRed.png" alt="Image 2">
+                    <div class="overlay">
+                        <h3 data-i18n="portfolio2">Identidad Corporativa / Naming</h3>
+                    </div>
+                </div>
+                <div class="item small-vertical">
+                    <img src="/src/portfolio/FincaRed2.png" alt="Image 3">
+                    <div class="overlay">
+                        <h3 data-i18n="portfolio3">Identidad Corporativa</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="item small-vertical">
+                <video class="media" src="/src/portfolio/Reel Albariño_comp.mp4" muted loop></video>
+                <div class="overlay">
+                    <h3 data-i18n="portfolio4">Branded content</h3>
+                </div>
+            </div>
+            <div class="item small-vertical">
+                <video class="media" src="/src/portfolio/Reel FLM_comp.mp4" muted loop></video>
+                <div class="overlay">
+                    <h3 data-i18n="portfolio5">Customer Journey</h3>
+                </div>
+            </div>
+            <div class="item item-special small-vertical">
+                <img src="/src/portfolio/Fulanito-2.png" alt="Image 4">
+                <div class="overlay">
+                    <h3 data-i18n="portfolio7">Diseño Packaging</h3>
+                </div>
+            </div>
+            <div class="item item-special small-vertical">
+                <img src="/src/portfolio/Creo Old Vineyards.png" alt="Image 5">
+                <div class="overlay">
+                    <h3 data-i18n="portfolio8">Diseño Packaging</h3>
+                </div>
+            </div>
+            <div class="item large-horizontal video-doña">
+                <video class="media" src="/src/portfolio/Doña maria web prueba.mp4" muted loop></video>
+                <div class="overlay">
+                    <h3 data-i18n="portfolio6">Diseño Web</h3>
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+    
+    <section class="quienes-nos-eligen" data-aos="flip-left" data-aos-duration="1000">
+        <div class="section-title">
+            <div class="circle-icon">
+                <i class="fas fa-handshake"></i>
+            </div>
+            <div class="section-title-text">
+                <h2 class="titulo" data-i18n="quienes_nos_eligen">Quienes nos eligen</h2>
+                <div class="subrayado"></div>
+            </div>
+        </div>
+        <div class="logo-gallery">
+            <div class="logo-container">
+                <img src="/src/marcas/Finca la malka.png" alt="Finca la malka">
+            </div>
+            <div class="logo-container grupo_chac">
+                <img src="/src/marcas/CHAC CHAC LOGO BLANCO.png" alt="Chac Chac">
+            </div>
+            <div class="logo-container grupo_cepas">
+                <img src="/src/marcas/GRUPO CEPAS LOGO BLANCO.png" alt="Cepas">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/ACHAVAL FERRER LOGO BLANCO.png" alt="Achaval Ferrer">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Land Of malbec.png" alt="Land of Malbec">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/FUNK LOGO BLANCO.png" alt="Viña Las Perdices">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Isologotipo+Slogan_Blanco.png" alt="Chac Chac">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/DMW Sello_blanco (1) (1) (1).png" alt="DMW">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/WiHo - -Isologotipo - blanco.png" alt="WiHo">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Finca la malka.png" alt="Finca la malka">
+            </div>
+            <div class="logo-container grupo_chac">
+                <img src="/src/marcas/CHAC CHAC LOGO BLANCO.png" alt="Chac Chac">
+            </div>
+            <div class="logo-container grupo_cepas">
+                <img src="/src/marcas/GRUPO CEPAS LOGO BLANCO.png" alt="Cepas">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/ACHAVAL FERRER LOGO BLANCO.png" alt="Achaval Ferrer">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Land Of malbec.png" alt="Land of Malbec">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/FUNK LOGO BLANCO.png" alt="Viña Las Perdices">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Isologotipo+Slogan_Blanco.png" alt="Chac Chac">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/DMW Sello_blanco (1) (1) (1).png" alt="DMW">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/WiHo - -Isologotipo - blanco.png" alt="WiHo">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Finca la malka.png" alt="Finca la malka">
+            </div>
+            <div class="logo-container grupo_chac">
+                <img src="/src/marcas/CHAC CHAC LOGO BLANCO.png" alt="Chac Chac">
+            </div>
+            <div class="logo-container grupo_cepas">
+                <img src="/src/marcas/GRUPO CEPAS LOGO BLANCO.png" alt="Cepas">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/ACHAVAL FERRER LOGO BLANCO.png" alt="Achaval Ferrer">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Land Of malbec.png" alt="Land of Malbec">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/FUNK LOGO BLANCO.png" alt="Viña Las Perdices">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Isologotipo+Slogan_Blanco.png" alt="Chac Chac">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/DMW Sello_blanco (1) (1) (1).png" alt="DMW">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/WiHo - -Isologotipo - blanco.png" alt="WiHo">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Finca la malka.png" alt="Finca la malka">
+            </div>
+            <div class="logo-container grupo_chac">
+                <img src="/src/marcas/CHAC CHAC LOGO BLANCO.png" alt="Chac Chac">
+            </div>
+            <div class="logo-container grupo_cepas">
+                <img src="/src/marcas/GRUPO CEPAS LOGO BLANCO.png" alt="Cepas">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/ACHAVAL FERRER LOGO BLANCO.png" alt="Achaval Ferrer">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Land Of malbec.png" alt="Land of Malbec">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/FUNK LOGO BLANCO.png" alt="Viña Las Perdices">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Isologotipo+Slogan_Blanco.png" alt="Chac Chac">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/DMW Sello_blanco (1) (1) (1).png" alt="DMW">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/WiHo - -Isologotipo - blanco.png" alt="WiHo">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Finca la malka.png" alt="Finca la malka">
+            </div>
+            <div class="logo-container grupo_chac">
+                <img src="/src/marcas/CHAC CHAC LOGO BLANCO.png" alt="Chac Chac">
+            </div>
+            <div class="logo-container grupo_cepas">
+                <img src="/src/marcas/GRUPO CEPAS LOGO BLANCO.png" alt="Cepas">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/ACHAVAL FERRER LOGO BLANCO.png" alt="Achaval Ferrer">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Land Of malbec.png" alt="Land of Malbec">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/FUNK LOGO BLANCO.png" alt="Viña Las Perdices">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Isologotipo+Slogan_Blanco.png" alt="Chac Chac">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/DMW Sello_blanco (1) (1) (1).png" alt="DMW">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/WiHo - -Isologotipo - blanco.png" alt="WiHo">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Finca la malka.png" alt="Finca la malka">
+            </div>
+            <div class="logo-container grupo_chac">
+                <img src="/src/marcas/CHAC CHAC LOGO BLANCO.png" alt="Chac Chac">
+            </div>
+            <div class="logo-container grupo_cepas">
+                <img src="/src/marcas/GRUPO CEPAS LOGO BLANCO.png" alt="Cepas">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/ACHAVAL FERRER LOGO BLANCO.png" alt="Achaval Ferrer">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Land Of malbec.png" alt="Land of Malbec">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/FUNK LOGO BLANCO.png" alt="Viña Las Perdices">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Isologotipo+Slogan_Blanco.png" alt="Chac Chac">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/DMW Sello_blanco (1) (1) (1).png" alt="DMW">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/WiHo - -Isologotipo - blanco.png" alt="WiHo">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Finca la malka.png" alt="Finca la malka">
+            </div>
+            <div class="logo-container grupo_chac">
+                <img src="/src/marcas/CHAC CHAC LOGO BLANCO.png" alt="Chac Chac">
+            </div>
+            <div class="logo-container grupo_cepas">
+                <img src="/src/marcas/GRUPO CEPAS LOGO BLANCO.png" alt="Cepas">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/ACHAVAL FERRER LOGO BLANCO.png" alt="Achaval Ferrer">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Land Of malbec.png" alt="Land of Malbec">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/FUNK LOGO BLANCO.png" alt="Viña Las Perdices">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Isologotipo+Slogan_Blanco.png" alt="Chac Chac">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/DMW Sello_blanco (1) (1) (1).png" alt="DMW">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/WiHo - -Isologotipo - blanco.png" alt="WiHo">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Finca la malka.png" alt="Finca la malka">
+            </div>
+            <div class="logo-container grupo_chac">
+                <img src="/src/marcas/CHAC CHAC LOGO BLANCO.png" alt="Chac Chac">
+            </div>
+            <div class="logo-container grupo_cepas">
+                <img src="/src/marcas/GRUPO CEPAS LOGO BLANCO.png" alt="Cepas">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/ACHAVAL FERRER LOGO BLANCO.png" alt="Achaval Ferrer">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Land Of malbec.png" alt="Land of Malbec">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/FUNK LOGO BLANCO.png" alt="Viña Las Perdices">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Isologotipo+Slogan_Blanco.png" alt="Chac Chac">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/DMW Sello_blanco (1) (1) (1).png" alt="DMW">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/WiHo - -Isologotipo - blanco.png" alt="WiHo">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Finca la malka.png" alt="Finca la malka">
+            </div>
+            <div class="logo-container grupo_chac">
+                <img src="/src/marcas/CHAC CHAC LOGO BLANCO.png" alt="Chac Chac">
+            </div>
+            <div class="logo-container grupo_cepas">
+                <img src="/src/marcas/GRUPO CEPAS LOGO BLANCO.png" alt="Cepas">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/ACHAVAL FERRER LOGO BLANCO.png" alt="Achaval Ferrer">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Land Of malbec.png" alt="Land of Malbec">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/FUNK LOGO BLANCO.png" alt="Viña Las Perdices">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/Isologotipo+Slogan_Blanco.png" alt="Chac Chac">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/DMW Sello_blanco (1) (1) (1).png" alt="DMW">
+            </div>
+            <div class="logo-container">
+                <img src="/src/marcas/WiHo - -Isologotipo - blanco.png" alt="WiHo">
+            </div>
+        </div>
+    </section>
+    
+    <b id="contacto"></b>
+    <section class="contacto">
+        <div class="section-title">
+            <div class="circle-icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="section-title-text">
+                <h2 class="titulo" data-i18n="contacto0">Contacto</h2>
+                <div class="subrayado"></div>
+            </div>
+        </div>
+        <form class="formulario" id="contactForm" action="https://formspree.io/f/xjvnlvad" method="POST">
+            <div class="campo-doble">
+                <div class="campo">
+                    <label for="nombre" data-i18n="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="apellido" data-i18n="apellido">Apellido</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+            </div>
+            
+            <div class="campo">
+                <label for="empresa" data-i18n="empresa">Empresa</label>
+                <input type="text" id="empresa" name="empresa" required>
+            </div>
+            <div class="campo-doble">
+                <div class="campo">
+                    <label for="email" data-i18n="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="campo">
+                    <label for="telefono" data-i18n="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+            </div>
+            <div class="campo">
+                <label for="mensaje" data-i18n="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="mensaje" rows="6" required></textarea>
+            </div>
+            <button type="submit" data-i18n="enviar" id="enviarBtn">Enviar</button>
+        </form>
+    </section>
+    
+    
+    <section class="footer">
+        <footer class="text-center text-white" style="background-color: #102127">
+            <div class="container">
+                <hr class="my-5" />
+                <section class="mb-5">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-lg-8">
+                            <img src="/src/logo-duers.png" alt="Logo de la Agencia" style="max-width: 300px; height: auto;" />
+                        </div>
+                    </div>
+                </section>
+                <section class="text-center mb-5 ">
+                    <a href="https://www.instagram.com/hola.duers/" target="_blank" class="text-center text-white me-4 text-decoration-none">
+                        <i class="fab fa-instagram fa-2x text-decoration-none"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/holaduers/" target="_blank" class="text-center text-white me-4 text-decoration-none">
+                        <i class="fab fa-linkedin fa-2x"></i>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100088313084812&sk=about" target="_blank" class="text-center text-white me-4 text-decoration-none">
+                        <i class="fab fa-facebook fa-2x"></i>
+                    </a>
+                    
+                </section>
+            </div>
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+                © 2024
+                <a class="text-white text-decoration-none">Duers</a>
+            </div>
+        </footer>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="/main.js"></script>
+</body>
+</html>
